@@ -5,10 +5,10 @@ $(document).ready(function(){
 		string = string + '<p>';
 		if(count % 3 == 0 || count % 5 == 0) {
 			if(count % 3 == 0) {
-				string = string + "fizz";
+				string = string + "fizz ";
 			}
 			if(count % 5 == 0) {
-				string = string + "buzz";
+				string = string + "buzz ";
 			}
 		}
 		else {
