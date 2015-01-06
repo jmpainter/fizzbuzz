@@ -4,14 +4,15 @@ $(document).ready(function(){
 	for(count = 1; count <= 100; count++) {
 		string = string + '<p>';
 
-		if(count % 3 == 0 || count % 5 == 0) {
-			if(count % 3 == 0) {
-				string = string + "fizz ";
-			}
-			if(count % 5 == 0) {
-				string = string + "buzz";
-			}
+		if(count % 3 == 0 && count % 5 == 0) {
+			string = string + "fizz buzz";
 		}
+		else if (count % 3 == 0 ) {
+			string = string + "fizz";
+		}
+		else if (count % 5 == 0 ) {
+			string = string + "buzz";
+		}	
 		else {
 			string = string + count;
 		}
